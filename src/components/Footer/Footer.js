@@ -4,20 +4,16 @@ import {
   Grid,
   Typography,
   makeStyles,
-  AppBar,
-  Toolbar,
 } from "@material-ui/core";
-
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import About from "../About/About";
 import Works from "../Works/Works";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     backgroundColor: "#191924",
     height: 400,
-    width: "100%",
     color: "#FDFFFC",
   },
   box: {
@@ -90,7 +86,7 @@ function MiniFooter() {
       <Grid container className={classes.miniBox}>
         <Grid item xs={12} md={10}>
           <Typography className={classes.copyright}>
-            Copyright © 2020 All rights reserved | Ghaiyee.
+          {`Copyright \u00A9 ${new Date().getFullYear()} All rights reserved | Ghaiyee.`}
           </Typography>
         </Grid>
         <Grid item xs={6} md={1}>
