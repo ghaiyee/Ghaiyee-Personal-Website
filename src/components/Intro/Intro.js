@@ -1,9 +1,13 @@
-import { makeStyles, Grid, Box, Typography, IconButton } from "@material-ui/core";
+import { makeStyles, Grid, Box, Typography, IconButton, Button } from "@material-ui/core";
+
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 
 
 const useStyles = makeStyles(() => ({
   root: {
-    minHeight: 500,
+    minHeight: 600,
     paddingTop: 100,
   },
   content: {
@@ -12,7 +16,7 @@ const useStyles = makeStyles(() => ({
     padding: 15
   },
   photo: {
-    height: 120,
+    height: 110,
     width: "auto",
     borderRadius: "50%",
   },
@@ -23,8 +27,37 @@ const useStyles = makeStyles(() => ({
     fontWeight: 500,
     letterSpacing: -0.5,
     textAlign: "center",
-  }
+  },
+  icon:{
+    color:"#191924",
+    "&:hover,&:focus": {
+      color: "#3b3b4d",
+    },
+  },
+
+  button:{
+    borderRadius: 0,
+    border: 0,
+    backgroundColor: "#191924",
+    color: "#FDFFFC",
+    width: 200,
+    height: 50,
+    "&:hover,&:focus": {
+      color: "#3b3b4d",
+      backgroundColor: "transparent",
+      fontWeight: 700,
+
+    },
+  },
+
+  buttonFont:{
+    fontFamily: "Libre Baskerville",
+    fontSize: 15,
+    fontWeight: 500,
+  },
+
 }));
+
 
 export default function Intro() {
   const classes = useStyles();
@@ -49,7 +82,36 @@ export default function Intro() {
         </Grid>
         <Grid item xs={12} md={12}>
           <Box className={classes.content}>
-            <IconButton>  </IconButton>
+            <IconButton
+             component="a"
+             href="https://github.com/ghaiyee"
+             target="_blank"
+             rel="noopener noreferrer"
+             className={classes.icon}
+            >
+              <GitHubIcon />
+            </IconButton>
+            <IconButton
+             component="a"
+             href="https://www.linkedin.com/in/ghaiyeelow/"
+             target="_blank"
+             rel="noopener noreferrer"
+             className={classes.icon}
+             >
+              <LinkedInIcon />
+            </IconButton>
+            <IconButton  href="mailto:ghaiyee@gmail.com" className={classes.icon}>
+              <AlternateEmailIcon />
+            </IconButton>
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={12}>
+          <Box className={classes.content}>
+            <Button className={classes.button}>
+              <Typography className={classes.buttonFont}>
+                RECENT WORKS
+              </Typography>
+            </Button>
           </Box>
         </Grid>
       </Grid>
