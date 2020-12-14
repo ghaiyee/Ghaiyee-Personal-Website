@@ -1,6 +1,7 @@
 
 import MainLayout from "./components/layouts/MainLayout";
 import Intro from "./components/Intro/Intro"
+import Works from "./components/Works/Works"
 
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <div>
         <MainLayout>
           <Intro />
+          <Works />
         </MainLayout>
       </div>
   );
