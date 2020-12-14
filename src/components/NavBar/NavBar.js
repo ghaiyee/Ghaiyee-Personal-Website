@@ -1,16 +1,8 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import {
-  Container,
   AppBar,
-  Box,
-  Button,
   Toolbar,
-  Hidden,
-  Drawer,
-  IconButton,
   makeStyles,
-  Typography,
-  MenuItem,
   Grid,
 } from "@material-ui/core";
 
@@ -21,6 +13,7 @@ const useStyles = makeStyles(() => ({
   root: {
     padding: "5px",
     backgroundColor: "#FDFFFC",
+    boxShadow: "none"
   },
 
   logo: {
