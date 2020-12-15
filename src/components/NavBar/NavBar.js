@@ -43,12 +43,12 @@ export default function NavBar() {
         <AppBar className={classes.root}>
           <Toolbar>
             <Grid container>
-              <Grid item xs={12} md={10}>
+              <Grid item xs={12} md={12}>
                 <Link to="/">
                   <img src="ghaiyee-logo.png" className={classes.logo} />
                 </Link>
               </Grid>
-              <Grid item xs={6} md={1}>
+              {/* <Grid item xs={6} md={1}>
                 <Link to="/about" className={classes.menu}>
                   About
                 </Link>
@@ -57,7 +57,7 @@ export default function NavBar() {
                 <Link to="/works" className={classes.menu}>
                   Works
                 </Link>
-              </Grid>
+              </Grid> */}
             </Grid>
           </Toolbar>
         </AppBar>

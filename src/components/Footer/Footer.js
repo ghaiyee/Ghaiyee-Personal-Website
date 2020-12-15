@@ -85,12 +85,12 @@ function MiniFooter() {
   return (
     <Router>
       <Grid container className={classes.miniBox}>
-        <Grid item xs={12} md={10}>
+        <Grid item xs={12} md={12}>
           <Typography className={classes.copyright}>
           {`Copyright \u00A9 ${new Date().getFullYear()} All rights reserved | Ghaiyee.`}
           </Typography>
         </Grid>
-        <Grid item xs={6} md={1}>
+        {/* <Grid item xs={6} md={1}>
           <Link to="/about" className={classes.menu}>
             About
           </Link>
@@ -99,7 +99,7 @@ function MiniFooter() {
           <Link to="/works" className={classes.menu}>
             Works
           </Link>
-        </Grid>
+        </Grid> */}
       </Grid>
 
       <Switch>
