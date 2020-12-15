@@ -4,8 +4,6 @@ import {
   Container,
   Grid,
   Typography,
-  Hidden,
-  Button,
   Box,
 } from "@material-ui/core";
 
