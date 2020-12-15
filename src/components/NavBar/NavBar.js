@@ -18,7 +18,7 @@ const useStyles = makeStyles(() => ({
   },
 
   logo: {
-    height: 50,
+    height: 60,
     width: "auto",
   },
 
