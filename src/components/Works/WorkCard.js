@@ -28,7 +28,7 @@ const useStyles = makeStyles(() => ({
     alignItems: "center",
     justify: "center",
     "@media (max-width:800px)": {
-      padding: 5,
+      padding: 10,
     },
   },
 
@@ -91,6 +91,9 @@ export default function WorkCard() {
                   width="100%"
                   height="auto"
                   alt="project-photo"
+                  style={{
+                    boxShadow: "6px 6px 6px #d3d3d3"
+                  }}
                 />
               </Box>
             </Grid>
