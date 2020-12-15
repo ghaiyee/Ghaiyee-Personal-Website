@@ -15,6 +15,7 @@ const useStyles = makeStyles(() => ({
     backgroundColor: "#191924",
     height: 400,
     color: "#FDFFFC",
+    width: "100%"
   },
   box: {
     height: 300,
@@ -58,7 +59,7 @@ export default function Footer() {
   const classes = useStyles();
 
   return (
-    <Box className={classes.root}>
+    <div className={classes.root}>
       <Container maxWidth="lg">
         <Grid container>
           <Grid item xs={12} md={12}>
@@ -74,7 +75,7 @@ export default function Footer() {
             <MiniFooter/>
         </Grid>
       </Container>
-    </Box>
+    </div>
   );
 }
 

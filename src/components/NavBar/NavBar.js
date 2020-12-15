@@ -13,7 +13,8 @@ const useStyles = makeStyles(() => ({
   root: {
     padding: 10,
     backgroundColor: "#f8f9fa",
-    boxShadow: "none"
+    boxShadow: "none",
+    maxWidth: "xl",
   },
 
   logo: {

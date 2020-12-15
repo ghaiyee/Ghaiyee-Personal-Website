@@ -12,53 +12,42 @@ import {
 import ButtonDark from "../Button/ButtonDark";
 
 const useStyles = makeStyles(() => ({
-  root: {
-    height: "auto",
-    maxWidth: "xl",
-    padding: 30,
-  },
   box: {
-    padding: 5,
-    "@media (min-width:600px)": {
-      padding: 20,
-    },
+    minHeight: 350,
+    direction: "column",
+    justify: "center",
     alignItems: "center",
-  },
-  paper: {
-    padding: 5,
-    "@media (min-width:600px)": {
-      padding: 30,
+    padding: 10,
+    "@media (max-width:800px)": {
+      padding: 10,
     },
-    height: "auto",
-    width: "100%"
   },
+
   content: {
-    height: "auto",
+    padding: 20,
+    alignItems: "center",
+    justify: "center",
+    "@media (max-width:800px)": {
+      padding: 5,
+    },
   },
-  projectImage: {},
 
   projectTitle: {
-    height: 40,
-    width:"auto",
-    color: "#191924",
     fontFamily: "Libre Baskerville",
     fontSize: 20,
     fontWeight: 500,
     letterSpacing: -0.5,
-    textAlign: "left",
-    justify: "center",
+    color: "#191924",
+    padding: 5,
   },
 
   projectDescription: {
-    color: "#191924",
     fontFamily: "Montserrat",
     fontSize: 14,
     fontWeight: 500,
     letterSpacing: -0.5,
-    textAlign: "left",
-    justify: "center",
-    paddingTop: 5,
-    paddingBottom: 5,
+    color: "#191924",
+    padding: 5,
   },
 }));
 
@@ -91,48 +80,41 @@ export default function WorkCard() {
     },
   ];
   return (
-    <div className={classes.root}>
+    <div>
       <Container maxWidth="md">
         {projects.map((p) => (
-          <Box  className={classes.box}>
-            <Paper elevation={0}  className={classes.paper}>
-              <Grid container>
-                <Grid item xs={12} md={7}>
-                  <Box>
-                  <img
-                    src={p.projectImage}
-                    width="400"
-                    height="auto"
-                    layout="responsive"
-                    alt="project-photo"
-                  />
-                  </Box>
-                </Grid>
-                <Grid item xs={12} md={5}>
-                  <Box className={classes.content}>
-                    <Typography className={classes.projectTitle}>
-                      {p.projectName}
-                    </Typography>
-                    <Typography className={classes.projectDescription}>
-                      {p.projectSum}
-                    </Typography>
-                    <Typography className={classes.projectDescription}>
-                      Technologies/Tools Used:
-                      <br />
-                      {p.techUsed}
-                    </Typography>
-                    <Typography className={classes.projectDescription}>
-                      Role:
-                      <br />
-                      {p.projectRole}
-                    </Typography>
-                    <br />
-                    <ButtonDark>View details</ButtonDark>
-                  </Box>
-                </Grid>
-              </Grid>
-            </Paper>
-          </Box>
+          <Grid container className={classes.box}>
+            <Grid item xs={12} md={6}>
+              <Box className={classes.content}>
+                <img
+                  src={p.projectImage}
+                  width="100%"
+                  height="auto"
+                  alt="project-photo"
+                />
+              </Box>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Box className={classes.content}>
+                <Typography className={classes.projectTitle}>
+                  {p.projectName}
+                </Typography>
+                <Typography className={classes.projectDescription}>
+                  {p.projectSum}
+                  <br />
+                  Technologies/Tools Used:
+                  <br />
+                  {p.techUsed}
+                  <br />
+                  Role:
+                  <br />
+                  {p.projectRole}
+                </Typography>
+                <br />
+                <ButtonDark>View details</ButtonDark>
+              </Box>
+            </Grid>
+          </Grid>
         ))}
       </Container>
     </div>
