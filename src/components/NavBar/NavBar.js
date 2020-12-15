@@ -12,7 +12,7 @@ import Works from "../Works/Works";
 const useStyles = makeStyles(() => ({
   root: {
     padding: 10,
-    backgroundColor: "#FDFFFC",
+    backgroundColor: "transparent",
     boxShadow: "none"
   },
 
