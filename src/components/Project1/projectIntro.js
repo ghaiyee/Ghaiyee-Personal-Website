@@ -8,10 +8,14 @@ import {
   CardMedia,
 } from "@material-ui/core";
 
+import ButtonDark from "../Button/ButtonDark";
+
 const useStyles = makeStyles(() => ({
   root: {
-    minHeight: 200,
-    backgroundColor:"red"
+    minHeight: 550,
+    "@media (max-width: 650px)": {
+        minHeight: 150,
+      },
   },
 
   background: {
@@ -22,10 +26,11 @@ const useStyles = makeStyles(() => ({
   },
 
   introText: {
-    marginTop: "-60%",
+    marginTop: "-70%",
     textAlign: "left",
     width: "100%",
     height: "100%",
+    paddingBottom:20
   },
 
   title: {
@@ -45,9 +50,12 @@ const useStyles = makeStyles(() => ({
     color: "#191924",
     paddingTop: 10,
     "@media (max-width: 650px)": {
-      fontSize: 10,
+      fontSize: 8,
     },
   },
+  button:{
+      paddingTop:20,
+  }
 }));
 
 export default function ProjectIntro() {
@@ -72,6 +80,9 @@ export default function ProjectIntro() {
               <Typography className={classes.content}>
                 {introContent.content}
               </Typography>
+              <Box className={classes.button}>
+              <ButtonDark >Visit Website</ButtonDark>
+              </Box>
             </Box>
           </Grid>
         </Grid>

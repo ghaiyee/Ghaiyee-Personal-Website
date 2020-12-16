@@ -8,7 +8,10 @@ const useStyles = makeStyles(() => ({
   
     children: {
       minHeight: 500,
-      paddingTop: 50
+      paddingTop: 50,
+      "@media (max-width: 650px)": {
+        paddingTop: 80,
+      },
     },
   }));
 

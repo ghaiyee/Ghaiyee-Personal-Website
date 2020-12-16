@@ -20,12 +20,19 @@ const useStyles = makeStyles(() => ({
       backgroundColor: "transparent",
       fontWeight: 700,
     },
+    "@media (max-width: 650px)": {
+      width: 100,
+      height: 25,
+    },
   },
 
   buttonFont: {
     fontFamily: "Libre Baskerville",
     fontSize: 15,
     fontWeight: 500,
+    "@media (max-width: 650px)": {
+      fontSize: 8,
+    },
   },
 }));
 
