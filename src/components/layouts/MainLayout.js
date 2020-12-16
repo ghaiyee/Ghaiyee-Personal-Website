@@ -8,6 +8,7 @@ const useStyles = makeStyles(() => ({
 
   children: {
     minHeight: 500,
+    paddingTop: 100
   },
 }));
 

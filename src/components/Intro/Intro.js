@@ -8,7 +8,6 @@ import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 const useStyles = makeStyles(() => ({
   root: {
     minHeight: 500,
-    paddingTop: 100,
     justify: "center",
     alignItems: "center",
 
