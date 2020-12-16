@@ -38,7 +38,6 @@ export default function NavBar() {
   const classes = useStyles();
 
   return (
-    <Router>
       <div>
         <AppBar className={classes.root}>
           <Toolbar>
@@ -48,29 +47,10 @@ export default function NavBar() {
                   <img src="ghaiyee-logo.png" className={classes.logo} />
                 </Link>
               </Grid>
-              {/* <Grid item xs={6} md={1}>
-                <Link to="/about" className={classes.menu}>
-                  About
-                </Link>
-              </Grid>
-              <Grid item xs={6} md={1}>
-                <Link to="/works" className={classes.menu}>
-                  Works
-                </Link>
-              </Grid> */}
             </Grid>
           </Toolbar>
         </AppBar>
-
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/works">
-            <Works />
-          </Route>
-        </Switch>
       </div>
-    </Router>
+
   );
 }

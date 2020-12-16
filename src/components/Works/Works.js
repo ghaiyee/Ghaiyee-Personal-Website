@@ -31,7 +31,7 @@ const useStyles = makeStyles(() => ({
 
 }));
 
-export default function Works() {
+export default function WorksHome() {
   const classes = useStyles();
 
   return (
