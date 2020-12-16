@@ -11,6 +11,7 @@ import {
 const useStyles = makeStyles(() => ({
   root: {
     minHeight: 200,
+    backgroundColor:"red"
   },
 
   background: {
@@ -52,9 +53,9 @@ const useStyles = makeStyles(() => ({
 export default function ProjectIntro() {
   const classes = useStyles();
 
-  const projectContent = {
-    introTitle: "KLINIK KAULSAY",
-    introContent:
+  const introContent = {
+    title: "KLINIK KAULSAY",
+    content:
       "Designed and implement a website with dynamic customizable content.",
   };
 
@@ -66,10 +67,10 @@ export default function ProjectIntro() {
           <Grid item xs={6} md={5}>
             <Box className={classes.introText}>
               <Typography className={classes.title}>
-                {projectContent.introTitle}
+                {introContent.title}
               </Typography>
               <Typography className={classes.content}>
-                {projectContent.introContent}
+                {introContent.content}
               </Typography>
             </Box>
           </Grid>
