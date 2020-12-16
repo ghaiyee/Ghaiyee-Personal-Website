@@ -10,7 +10,7 @@ import {
 
 const useStyles = makeStyles(() => ({
   root: {
-    height: 500
+    minHeight: 200,
   },
 
   background: {
@@ -21,45 +21,60 @@ const useStyles = makeStyles(() => ({
   },
 
   introText: {
-    
-    marginTop: -300,
-    textAlign:"center",
+    marginTop: "-60%",
+    textAlign: "left",
     width: "100%",
-    zIndex: "20",
     height: "100%",
-    "@media (max-width: 576px)": {
-      marginTop:-100,
+  },
+
+  title: {
+    fontFamily: "Libre Baskerville",
+    fontSize: 35,
+    fontWeight: 500,
+    color: "#191924",
+    "@media (max-width: 650px)": {
+      fontSize: 16,
     },
   },
 
-  title:{
-    fontFamily: "Libre Baskerville",
-    fontSize: 30,
+  content: {
+    fontFamily: "Montserrat",
+    fontSize: 20,
     fontWeight: 500,
     color: "#191924",
-    "@media (max-width: 576px)": {
-        fontSize:15,
-      },
-  }
-
+    paddingTop: 10,
+    "@media (max-width: 650px)": {
+      fontSize: 10,
+    },
+  },
 }));
 
 export default function ProjectIntro() {
   const classes = useStyles();
 
+  const projectContent = {
+    introTitle: "KLINIK KAULSAY",
+    introContent:
+      "Designed and implement a website with dynamic customizable content.",
+  };
+
   return (
     <div className={classes.root}>
-      <img src="/projectIntroBackground.png" className={classes.background}/>
-      <div >
+      <img src="/projectIntroBackground.png" className={classes.background} />
+      <Container maxWidth="lg">
         <Grid container>
-          <Grid item xs={6} md={6}>
-              <Box className={classes.introText}>
-              <Typography className={classes.title}>KLINIK KAULSAY</Typography>
-              </Box>
-            
+          <Grid item xs={6} md={5}>
+            <Box className={classes.introText}>
+              <Typography className={classes.title}>
+                {projectContent.introTitle}
+              </Typography>
+              <Typography className={classes.content}>
+                {projectContent.introContent}
+              </Typography>
+            </Box>
           </Grid>
         </Grid>
-      </div>
+      </Container>
     </div>
   );
 }
