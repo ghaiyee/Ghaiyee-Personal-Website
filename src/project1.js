@@ -8,7 +8,8 @@ import {
 
 import SubLayout from "../src/components/layouts/SubLayout";
 import ProjectIntro from "../src/components/Project1/projectIntro";
-import ProjectContent from "../src/components/Project1/projectContent";
+import ProjectOverview from "./components/Project1/projectOverview";
+import ProjectContent from "./components/Project1/projectContent"
 
 const useStyles = makeStyles(() => ({
   root: {},
@@ -21,6 +22,7 @@ export default function Project1() {
     <>
       <SubLayout>
         <ProjectIntro />
+        <ProjectOverview />
         <ProjectContent />
       </SubLayout>
     </>

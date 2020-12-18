@@ -116,7 +116,7 @@ export default function ProjectIntro() {
   const introContent = {
     title: "KLINIK KAULSAY",
     content:
-      "Designed and implement a website with dynamic customizable content.",
+      "Redesigned and implemented content management feature to Klinik Kaulsay Website.",
   };
 
   return (
