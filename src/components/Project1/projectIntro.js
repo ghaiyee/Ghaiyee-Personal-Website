@@ -14,8 +14,8 @@ const useStyles = makeStyles(() => ({
   root: {
     minHeight: 550,
     "@media (max-width: 650px)": {
-        minHeight: 150,
-      },
+      minHeight: 150,
+    },
   },
 
   background: {
@@ -26,11 +26,26 @@ const useStyles = makeStyles(() => ({
   },
 
   introText: {
-    marginTop: "-70%",
+    marginTop: -300,
     textAlign: "left",
     width: "100%",
     height: "100%",
-    paddingBottom:20
+    paddingBottom: 20,
+    "@media (min-width: 300px)": {
+      marginTop: -120,
+    },
+    "@media (min-width: 576px)": {
+      marginTop: -150,
+    },
+    "@media (min-width: 768px)": {
+      marginTop: -170,
+    },
+    "@media (min-width: 992px)": {
+      marginTop: -200,
+    },
+    "@media (min-width: 1200px)": {
+      marginTop: -300,
+    },
   },
 
   title: {
@@ -38,8 +53,20 @@ const useStyles = makeStyles(() => ({
     fontSize: 35,
     fontWeight: 500,
     color: "#191924",
-    "@media (max-width: 650px)": {
-      fontSize: 16,
+    "@media (min-width: 300px)": {
+      fontSize: 14,
+    },
+    "@media (min-width: 576px)": {
+      fontSize: 18,
+    },
+    "@media (min-width: 768px)": {
+      fontSize: 20,
+    },
+    "@media (min-width: 992px)": {
+      fontSize: 24,
+    },
+    "@media (min-width: 1200px)": {
+      fontSize: 35,
     },
   },
 
@@ -48,14 +75,39 @@ const useStyles = makeStyles(() => ({
     fontSize: 20,
     fontWeight: 500,
     color: "#191924",
-    paddingTop: 10,
-    "@media (max-width: 650px)": {
-      fontSize: 8,
+    paddingTop: 5,
+    
+    "@media (min-width: 300px)": {
+      fontSize: 10,
+    },
+    "@media (min-width: 576px)": {
+      fontSize: 12,
+    },
+    "@media (min-width: 768px)": {
+      fontSize: 14,
+    },
+    "@media (min-width: 992px)": {
+      fontSize: 18,
+    },
+    "@media (min-width: 1200px)": {
+      fontSize: 20,
     },
   },
-  button:{
-      paddingTop:20,
-  }
+  button: {
+    paddingTop: 20,
+    "@media (min-width: 300px)": {
+      paddingTop: 10,
+    },
+    "@media (min-width: 768px)": {
+      paddingTop: 14,
+    },
+    "@media (min-width: 992px)": {
+      paddingTop: 18,
+    },
+    "@media (min-width: 1200px)": {
+      paddingTop: 20,
+    },
+  },
 }));
 
 export default function ProjectIntro() {
@@ -81,7 +133,7 @@ export default function ProjectIntro() {
                 {introContent.content}
               </Typography>
               <Box className={classes.button}>
-              <ButtonDark >Visit Website</ButtonDark>
+                <ButtonDark>Visit Website</ButtonDark>
               </Box>
             </Box>
           </Grid>

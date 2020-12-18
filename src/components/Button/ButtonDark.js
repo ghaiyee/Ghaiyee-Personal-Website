@@ -20,7 +20,7 @@ const useStyles = makeStyles(() => ({
       backgroundColor: "transparent",
       fontWeight: 700,
     },
-    "@media (max-width: 650px)": {
+    "@media (max-width: 700px)": {
       width: 100,
       height: 25,
     },
@@ -30,7 +30,7 @@ const useStyles = makeStyles(() => ({
     fontFamily: "Libre Baskerville",
     fontSize: 15,
     fontWeight: 500,
-    "@media (max-width: 650px)": {
+    "@media (max-width: 700px)": {
       fontSize: 8,
     },
   },
