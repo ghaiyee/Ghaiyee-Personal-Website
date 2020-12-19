@@ -40,6 +40,7 @@ export default function ProjectContent() {
     objective4: " Increase their search engine rankings so that they can get more traffic to their website and acquire more clients.",
     objective5: " Improve the website page load performance and quality using Lighthouse.",
     background: "Before redesign",
+
     problem: "",
     solution: "",
     userJourney: "",
