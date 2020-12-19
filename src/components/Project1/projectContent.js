@@ -33,16 +33,24 @@ export default function ProjectContent() {
 
   const content = {
     overview:
-      "",
-    objective1: " Develop a more professional website that is an accurate representation of their practices.",
+      "Klinik Kaulsay is based in Damansara and specializes in autoimmune and metablic related treatment.",
+    objective1: " Develop a professional website that is an accurate representation of their practices.",
     objective2: " Create a user-friendly website that allow the user to manage the website content by allowing the user to create, edit and publish content. ",
     objective3: " Make the website mobile friendly so that they can provide a great user experience to their mobile users.",
     objective4: " Increase their search engine rankings so that they can get more traffic to their website and acquire more clients.",
     objective5: " Improve the website page load performance and quality using Lighthouse.",
-    background: "Before redesign",
-
-    problem: "",
-    solution: "",
+    background: " Before redesign",
+    problem1: "Low website page load performance based on GTmetrix report",
+    problem2: "",
+    problem3: "",
+    problem4: "",
+    problem5: "",
+    problem6: "",
+    solution1: " Website architecture",
+    solution2: " Web development",
+    solution3: " Website hosting migration",
+    solution4: " Content Management System (CMS)",
+    solution5: "",
     userJourney: "",
     initialSketches: "",
     prototyping: "",
@@ -60,15 +68,13 @@ export default function ProjectContent() {
           <Grid item md={12} xs={12}>
             <Typography className={classes.title}>Objective</Typography>
             <Typography className={classes.content}>
-              {content.objective1}
-              <br/>
-              {content.objective2}
-              <br/>
-              {content.objective3}
-              <br/>
-              {content.objective4}
-              <br/>
-              {content.objective5}
+              <ul>
+                <li>{content.objective1}</li>
+                <li>{content.objective2}</li>
+                <li>{content.objective3}</li>
+                <li>{content.objective4}</li>
+                <li>{content.objective5}</li>
+              </ul>
             </Typography>
           </Grid>
           <Grid item md={12} xs={12}>
@@ -76,17 +82,39 @@ export default function ProjectContent() {
             <Typography className={classes.content}>
               {content.background}
             </Typography>
+            <img src="drkaulsayHomeBefore.jpg" width="50%" />
+            <img src="drkaulsayContactBefore.jpg" width="50%" />
+            
           </Grid>
           <Grid item md={12} xs={12}>
             <Typography className={classes.title}>The Problem</Typography>
             <Typography className={classes.content}>
-              {content.problem}
+              {content.problem1}
+              <img src="drkaulsayGTmetrixGrade.JPG" width="100%" />
+              <br/>
+              {content.problem2}
+              <br/>
+              {content.problem3}
+              <br/>
+              {content.problem4}
+              <br/>
+              {content.problem5}
+              <br/>
+              {content.problem6}
             </Typography>
           </Grid>
           <Grid item md={12} xs={12}>
             <Typography className={classes.title}>The Solution</Typography>
             <Typography className={classes.content}>
-              {content.solution}
+              Klinik Kaulsay's website redesign work for my team included:
+              <ul>
+                <li>{content.solution1}</li>
+                <li>{content.solution2}</li>
+                <li>{content.solution3}</li>
+                <li>{content.solution4}</li>
+                <li>{content.solution5}</li>
+              </ul>
+              
             </Typography>
           </Grid>
           <Grid item md={12} xs={12}>

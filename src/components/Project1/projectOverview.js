@@ -34,7 +34,7 @@ export default function ProjectOverview() {
 
   const content = {
     tools: "Adobe XD, HTML, CSS, JavaScript, ReactJS, NextJS & Firebase",
-    team: "ZK (Back-end Developer) & Ghaiyee",
+    team: "ZK & Ghaiyee",
     myRole: "Web Designer & Front-end Developer",
     timeline:
       "November 2020 to Present: Prototyping, Website Design & Development",
