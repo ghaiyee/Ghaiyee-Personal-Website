@@ -39,7 +39,7 @@ export default function ProjectContent() {
     objective3: " Make the website mobile friendly so that they can provide a great user experience to their mobile users.",
     objective4: " Increase their search engine rankings so that they can get more traffic to their website and increase the awareness of the public.",
     objective5: " Improve the website page load performance and quality using Lighthouse.",
-    background: " Before redesign",
+    background: " Klinik Kaulsay website was originally created using WorkPress.",
     problem1: " Not user-friendly to client as the client is not able to customize the website without training.",
     problem2: " Not customizable by client.",
     problem3: " Lack of information regarding the business e.g., services available and specialization.",
@@ -47,14 +47,14 @@ export default function ProjectContent() {
     problem5: "  ",
     problem6: " Low website page load performance based on GTmetrix report. ",
     solution1: " Redesign website architecture ",
-    solution2: " Build website with Next.js & React ",
+    solution2: " Build website from scratch with Next.js & React ",
     solution3: " Website hosting migration from WordPress to Vercel",
     solution4: " Implement Content Management System (CMS)",
     solution5: " Responsive website design ",
-    userJourney: "",
+    userJourney: " ",
     initialSketches: " After we defined our solution, we began to explore potential designs for Klinik Kaulsay's website. We then translated our solutions and ideas into the website layout sketches as illustrated below.",
     wireframing: "",
-    design: "",
+    design: " ",
     development: "",
     testing: "",
   };
@@ -85,7 +85,7 @@ export default function ProjectContent() {
             <Typography className={classes.content}>
               {content.background}
             </Typography>
-            <img src="drkaulsayBefore.jpg" />
+            <img src="drkaulsayBefore.jpg" width="100%" />
             
           </Grid>
           <Grid item md={12} xs={12}>
@@ -135,6 +135,7 @@ export default function ProjectContent() {
             <Typography className={classes.content}>
               {content.wireframing}
               <img src="drkaulsayWireframe.jpg" width="100%" />
+              <img src="drkaulsayWireframeManage.jpg" width="100%" />
             </Typography>
           </Grid>
           <Grid item md={12} xs={12}>
