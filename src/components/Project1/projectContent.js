@@ -33,27 +33,30 @@ export default function ProjectContent() {
 
   const content = {
     overview:
-      "Klinik Kaulsay is based in Damansara and specializes in autoimmune and metablic related treatment.",
+      "Klinik Kaulsay is a clinic based in Damansara that specializes in autoimmune and metabolic related treatment.",
     objective1: " Develop a professional website that is an accurate representation of their practices.",
     objective2: " Create a user-friendly website that allow the user to manage the website content by allowing the user to create, edit and publish content. ",
     objective3: " Make the website mobile friendly so that they can provide a great user experience to their mobile users.",
     objective4: " Increase their search engine rankings so that they can get more traffic to their website and acquire more clients.",
     objective5: " Improve the website page load performance and quality using Lighthouse.",
     background: " Before redesign",
-    problem1: "Low website page load performance based on GTmetrix report",
-    problem2: "",
-    problem3: "",
-    problem4: "",
-    problem5: "",
-    problem6: "",
-    solution1: " Website architecture",
-    solution2: " Web development",
-    solution3: " Website hosting migration",
-    solution4: " Content Management System (CMS)",
-    solution5: "",
+    problem1: " Not user-friendly to client as the client is not able to customize the website without training.",
+    problem2: " Not customizable by client.",
+    problem3: " Lack of information regarding the business e.g., services provided and specialization.",
+    problem4: "  Informations displayed are not up-to-date e.g., reviews and the missing location.",
+    problem5: "  ",
+    problem6: " Low website page load performance based on GTmetrix report. ",
+    solution1: " Redesign website architecture ",
+    solution2: " Build website with Next.js & React ",
+    solution3: " Website hosting migration from WordPress to Vercel",
+    solution4: " Implement Content Management System (CMS)",
+    solution5: " Responsive ",
     userJourney: "",
     initialSketches: "",
-    prototyping: "",
+    wireframing: "",
+    design: "",
+    development: "",
+    testing: "",
   };
   return (
     <div className={classes.root}>
@@ -89,18 +92,16 @@ export default function ProjectContent() {
           <Grid item md={12} xs={12}>
             <Typography className={classes.title}>The Problem</Typography>
             <Typography className={classes.content}>
-              {content.problem1}
-              <img src="drkaulsayGTmetrixGrade.JPG" width="100%" />
-              <br/>
-              {content.problem2}
-              <br/>
-              {content.problem3}
-              <br/>
-              {content.problem4}
-              <br/>
-              {content.problem5}
-              <br/>
-              {content.problem6}
+              <ul>
+                <li>{content.problem1}</li>
+                <li>{content.problem2}</li>
+                <li>{content.problem3}</li>
+                <li>{content.problem4}</li>
+                <li>{content.problem5}</li>
+                <li>{content.problem6}<img src="drkaulsayGTmetrixGrade.JPG" width="100%" /></li>
+              </ul>
+              
+              
             </Typography>
           </Grid>
           <Grid item md={12} xs={12}>
@@ -126,13 +127,45 @@ export default function ProjectContent() {
           <Grid item md={12} xs={12}>
             <Typography className={classes.title}>Initial Sketches</Typography>
             <Typography className={classes.content}>
+              After we defined our solution, we began to explore potential designs for Klinik Kaulsay's website. We then translated our solutions and ideas into the website layout sketches as illustrated below.
               {content.initialSketches}
             </Typography>
           </Grid>
           <Grid item md={12} xs={12}>
-            <Typography className={classes.title}>Prototyping</Typography>
+            <Typography className={classes.title}>Wireframing</Typography>
             <Typography className={classes.content}>
-              {content.prototyping}
+              {content.wireframing}
+              <img src="drkaulsayWireframe.jpg" width="100%" />
+            </Typography>
+          </Grid>
+          <Grid item md={12} xs={12}>
+            <Typography className={classes.title}>Design</Typography>
+            <Typography className={classes.content}>
+              {content.design}
+            </Typography>
+          </Grid>
+          <Grid item md={12} xs={12}>
+            <Typography className={classes.title}>Development</Typography>
+            <Typography className={classes.content}>
+              {content.development}
+            </Typography>
+          </Grid>
+          <Grid item md={12} xs={12}>
+            <Typography className={classes.title}>Testing</Typography>
+            <Typography className={classes.content}>
+              {content.testing}
+            </Typography>
+          </Grid>
+          <Grid item md={12} xs={12}>
+            <Typography className={classes.title}>Launching</Typography>
+            <Typography className={classes.content}>
+              {content.launching}
+            </Typography>
+          </Grid>
+          <Grid item md={12} xs={12}>
+            <Typography className={classes.title}>Client Feedback</Typography>
+            <Typography className={classes.content}>
+              {content.feedback}
             </Typography>
           </Grid>
         </Grid>
