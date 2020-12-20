@@ -37,22 +37,22 @@ export default function ProjectContent() {
     objective1: " Develop a professional website that is an accurate representation of their practices.",
     objective2: " Create a user-friendly website that allow the user to manage the website content by allowing the user to create, edit and publish content. ",
     objective3: " Make the website mobile friendly so that they can provide a great user experience to their mobile users.",
-    objective4: " Increase their search engine rankings so that they can get more traffic to their website and acquire more clients.",
+    objective4: " Increase their search engine rankings so that they can get more traffic to their website and increase the awareness of the public.",
     objective5: " Improve the website page load performance and quality using Lighthouse.",
     background: " Before redesign",
     problem1: " Not user-friendly to client as the client is not able to customize the website without training.",
     problem2: " Not customizable by client.",
-    problem3: " Lack of information regarding the business e.g., services provided and specialization.",
-    problem4: "  Informations displayed are not up-to-date e.g., reviews and the missing location.",
+    problem3: " Lack of information regarding the business e.g., services available and specialization.",
+    problem4: " Informations displayed are not up-to-date e.g., reviews and the missing location.",
     problem5: "  ",
     problem6: " Low website page load performance based on GTmetrix report. ",
     solution1: " Redesign website architecture ",
     solution2: " Build website with Next.js & React ",
     solution3: " Website hosting migration from WordPress to Vercel",
     solution4: " Implement Content Management System (CMS)",
-    solution5: " Responsive ",
+    solution5: " Responsive website design ",
     userJourney: "",
-    initialSketches: "",
+    initialSketches: " After we defined our solution, we began to explore potential designs for Klinik Kaulsay's website. We then translated our solutions and ideas into the website layout sketches as illustrated below.",
     wireframing: "",
     design: "",
     development: "",
@@ -85,8 +85,7 @@ export default function ProjectContent() {
             <Typography className={classes.content}>
               {content.background}
             </Typography>
-            <img src="drkaulsayHomeBefore.jpg" width="50%" />
-            <img src="drkaulsayContactBefore.jpg" width="50%" />
+            <img src="drkaulsayBefore.jpg" />
             
           </Grid>
           <Grid item md={12} xs={12}>
@@ -127,7 +126,7 @@ export default function ProjectContent() {
           <Grid item md={12} xs={12}>
             <Typography className={classes.title}>Initial Sketches</Typography>
             <Typography className={classes.content}>
-              After we defined our solution, we began to explore potential designs for Klinik Kaulsay's website. We then translated our solutions and ideas into the website layout sketches as illustrated below.
+             
               {content.initialSketches}
             </Typography>
           </Grid>

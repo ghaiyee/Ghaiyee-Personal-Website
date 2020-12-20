@@ -11,7 +11,7 @@ const useStyles = makeStyles(() => ({
     justify: "center",
     alignItems: "center",
     width: "100%",
-    paddingTop: 50,
+    paddingTop: "10%",
     paddingBottom: 50,
   },
   title: {
