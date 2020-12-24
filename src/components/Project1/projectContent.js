@@ -28,18 +28,16 @@ const useStyles = makeStyles(() => ({
     paddingTop: 10,
     paddingBottom: 10,
   },
-  image:{
-    paddingTop:20,
-
-  }
-
+  image: {
+    paddingTop: 20,
+  },
 }));
 export default function ProjectContent() {
   const classes = useStyles();
 
   const content = {
     overview:
-      "Klinik Kaulsay is a clinic based in Damansara that specializes in autoimmune and metabolic related treatment.",
+      "Klinik Kaulsay is a clinic based in Damansara that specializes in autoimmune and metabolic related treatments.",
     objective1:
       " Develop a professional website that is an accurate representation of their practices.",
     objective2:
@@ -53,24 +51,40 @@ export default function ProjectContent() {
     background:
       " Klinik Kaulsay website was originally created using WorkPress.",
     problem1:
-      " Not user-friendly to client as the client is not able to customize the website without training.",
-    problem2: " Not customizable by client.",
+      " Not user-friendly to business user as the user is not able to customize the website without going through WorkPress training.",
+    problem2: " Content are not customizable by business user.",
     problem3:
-      " Lack of information regarding the business e.g., services available and specialization.",
+      " Lack of information regarding the business for individual users e.g., services available and specialization.",
     problem4:
-      " Informations displayed are not up-to-date e.g., reviews and the missing location.",
+      " Informations displayed are not up-to-date e.g., reviews and the missing Google Map location.",
     problem5: "  ",
     problem6: " Low website page load performance based on GTmetrix report. ",
-    solution1: " Redesign website architecture ",
-    solution2: " Build website from scratch with Next.js & React ",
-    solution3: " Website hosting migration from WordPress to Vercel",
-    solution4: " Implement Content Management System (CMS)",
-    solution5: " Responsive website design ",
-    userJourney: " ",
+    userStory1: " Know about Klinik Kaulsay",
+    userStory2: " Know what services Klinik Kaulsay provides",
+    userStory3: " Read about the recent reviews before visiting ",
+    userStory4: " Contact Klinik Kaulsay to clear doubts",
+    userStory5: " Provide review after visiting",
+    userStory6: " Read and respond to clients reviews ",
+    userStory7: " Read and respond to clients enquiries ",
+    userStory8:
+      " Change website content such as services available and operating hours",
+    userStory9: " ",
+    userStory10: " ",
+    solution1:
+      " Redesign website architecture and add new content such as services provided and review form",
+    solution2:
+      " Implement Content Management System (CMS) that allows our user to manage and modify the website content easily. ",
+    solution3:
+      " Build website from scratch with Next.js & Reactjs and website hosting migration from WordPress to Vercel.",
+    solution4:
+      " Create responsive website design to ensure the website is mobile friendly.",
+    solution5: "  ",
+    informationArchitecture:
+      " After we defined our solutions, we began to explore potential items we would like to include in Klinik Kaulsay's website and content management page. ",
     initialSketches:
-      " After we defined our solution, we began to explore potential designs for Klinik Kaulsay's website. We then translated our solutions and ideas into the website layout sketches as illustrated below.",
+      "  We then translated the information architecture, solutions and ideas into the website layout sketches as illustrated below.",
     wireframing1:
-      " After identifying the items that we needed to include in the website and content management system, we created a low-fidelity wireframes using Adobe XD. Overall, our user had an easy time going through the wireframes. However, we would need to remove one of the features - BLOG POST that we proposed to include. ",
+      " After identifying the items that we needed to include in the website and content management system, we created a low-fidelity wireframes using Adobe XD. Overall, our user had an easy time going through the wireframes. ",
     wireframing2:
       " This process allows us to get feedback from the user earlier in the process and it helps to prevent going down to the wrong path. Besides, wireframe also allows the development team to understand what they are building and how the end product should looks like.",
     design: " ",
@@ -104,7 +118,11 @@ export default function ProjectContent() {
             <Typography className={classes.content}>
               {content.background}
             </Typography>
-            <img src="drkaulsayBefore.jpg" width="100%" className={classes.image}/>
+            <img
+              src="drkaulsayBefore.jpg"
+              width="100%"
+              className={classes.image}
+            />
           </Grid>
           <Grid item md={12} xs={12}>
             <Typography className={classes.title}>The Problem</Typography>
@@ -117,10 +135,43 @@ export default function ProjectContent() {
                 <li>{content.problem5}</li>
                 <li>
                   {content.problem6}
-                  <img src="drkaulsayGTmetrixGrade.JPG" width="100%" className={classes.image}/>
+                  <img
+                    src="drkaulsayGTmetrixGrade.JPG"
+                    width="100%"
+                    className={classes.image}
+                  />
                 </li>
               </ul>
             </Typography>
+          </Grid>
+          <Grid item md={12} xs={12}>
+            <Typography className={classes.title}>User Stories</Typography>
+            <Grid container>
+              <Grid item md={6} xs={12}>
+                <Typography className={classes.content}>
+                  For Individual: User wants to
+                  <ul>
+                    <li>{content.userStory1}</li>
+                    <li>{content.userStory2}</li>
+                    <li>{content.userStory3}</li>
+                    <li>{content.userStory4}</li>
+                    <li>{content.userStory5}</li>
+                  </ul>
+                </Typography>
+              </Grid>
+              <Grid item md={6} xs={12}>
+                <Typography className={classes.content}>
+                  For Business: Business user wants to
+                  <ul>
+                    <li>{content.userStory6}</li>
+                    <li>{content.userStory7}</li>
+                    <li>{content.userStory8}</li>
+                    <li>{content.userStory9}</li>
+                    <li>{content.userStory10}</li>
+                  </ul>
+                </Typography>
+              </Grid>
+            </Grid>
           </Grid>
           <Grid item md={12} xs={12}>
             <Typography className={classes.title}>The Solution</Typography>
@@ -136,9 +187,11 @@ export default function ProjectContent() {
             </Typography>
           </Grid>
           <Grid item md={12} xs={12}>
-            <Typography className={classes.title}>User Journey</Typography>
+            <Typography className={classes.title}>
+              Information Architecture
+            </Typography>
             <Typography className={classes.content}>
-              {content.userJourney}
+              {content.informationArchitecture}
             </Typography>
           </Grid>
           <Grid item md={12} xs={12}>
@@ -146,6 +199,22 @@ export default function ProjectContent() {
             <Typography className={classes.content}>
               {content.initialSketches}
             </Typography>
+            <Grid container spacing={1}>
+              <Grid item md={6} xs={12}>
+                <img
+                  src="initialSketchesHomeContact.jpg"
+                  width="100%"
+                  className={classes.image}
+                />
+              </Grid>
+              <Grid item md={6} xs={12}>
+                <img
+                  src="initialSketchesManage.jpg"
+                  width="100%"
+                  className={classes.image}
+                />
+              </Grid>
+            </Grid>
           </Grid>
           <Grid item md={12} xs={12}>
             <Typography className={classes.title}>Wireframing</Typography>
@@ -154,13 +223,22 @@ export default function ProjectContent() {
               <br />
               <br />
               {content.wireframing2}
-              <img src="drkaulsayWireframe.jpg" width="100%" className={classes.image}/>
-              <img src="drkaulsayWireframeManage.jpg" width="100%" className={classes.image}/>
+              <img
+                src="drkaulsayWireframe.jpg"
+                width="100%"
+                className={classes.image}
+              />
+              <img
+                src="drkaulsayWireframeManage.jpg"
+                width="100%"
+                className={classes.image}
+              />
             </Typography>
           </Grid>
           <Grid item md={12} xs={12}>
             <Typography className={classes.title}>Design</Typography>
             <Typography className={classes.content}>
+              Typography & Color
               {content.design}
             </Typography>
           </Grid>
