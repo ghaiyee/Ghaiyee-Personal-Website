@@ -12,7 +12,6 @@ const useStyles = makeStyles(() => ({
     alignItems: "center",
     width: "100%",
     paddingTop: "10%",
-    paddingBottom: 50,
   },
   title: {
     fontFamily: "Libre Baskerville",
@@ -35,9 +34,9 @@ export default function ProjectOverview() {
   const content = {
     tools: "Adobe XD, HTML, CSS, JavaScript, ReactJS, NextJS & Firebase",
     team: "ZK & Ghaiyee",
-    myRole: "Web Designer & Front-end Developer",
+    myRole: "UX Designer & Front-end Developer",
     timeline:
-      "November 2020 to Present:  Planning, Prototyping, Website Design, Development, Testing",
+      "November 2020 to Present:  Planning, Prototyping, Website Design, Development, Testing, Launching",
   };
   return (
     <div className={classes.root}>
