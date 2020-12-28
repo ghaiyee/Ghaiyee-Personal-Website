@@ -31,6 +31,13 @@ const useStyles = makeStyles(() => ({
   image: {
     paddingTop: 20,
   },
+  imageTitle: {
+    fontFamily: "Montserrat",
+    fontSize: 12,
+    fontWeight: 500,
+    color: "#191924",
+    textAlign: "center",
+  },
 }));
 export default function ProjectContent() {
   const classes = useStyles();
@@ -89,7 +96,10 @@ export default function ProjectContent() {
       " This process allows us to get feedback from the user earlier in the process and it helps to prevent going down to the wrong path. Besides, wireframe also allows the development team to understand what they are building and how the end product should looks like.",
     design: " ",
     development: "",
-    testing: "",
+    testing1: "Tested on the major web browsers to ensure the website is able to renders correctly across major browsers such as Google Chrome, Firefox & Safari. ",
+    testing2: "Tested the responsiveness on multiple viewports such as Desktop, Laptop, Tablet & ",
+    launching: "pending...",
+    feedback: "pending...",
   };
   return (
     <div className={classes.root}>
@@ -123,6 +133,9 @@ export default function ProjectContent() {
               width="100%"
               className={classes.image}
             />
+            <Typography className={classes.imageTitle}>
+              Klinik Kaulsay website before redesign
+            </Typography>
           </Grid>
           <Grid item md={12} xs={12}>
             <Typography className={classes.title}>The Problem</Typography>
@@ -140,6 +153,9 @@ export default function ProjectContent() {
                     width="100%"
                     className={classes.image}
                   />
+                  <Typography className={classes.imageTitle}>
+                  GTmetrix report for Klinik Kaulsay before redesign
+                </Typography>
                 </li>
               </ul>
             </Typography>
@@ -193,6 +209,14 @@ export default function ProjectContent() {
             <Typography className={classes.content}>
               {content.informationArchitecture}
             </Typography>
+            <img
+              src="drkaulsayInformationArchitecture.jpg"
+              width="100%"
+              className={classes.image}
+            />
+            <Typography className={classes.imageTitle}>
+              Klinik Kaulsay information architecture for home page
+            </Typography>
           </Grid>
           <Grid item md={12} xs={12}>
             <Typography className={classes.title}>Initial Sketches</Typography>
@@ -206,6 +230,9 @@ export default function ProjectContent() {
                   width="100%"
                   className={classes.image}
                 />
+                <Typography className={classes.imageTitle}>
+                  Initial sketches for Klinik Kaulsay website
+                </Typography>
               </Grid>
               <Grid item md={6} xs={12}>
                 <img
@@ -213,6 +240,9 @@ export default function ProjectContent() {
                   width="100%"
                   className={classes.image}
                 />
+                <Typography className={classes.imageTitle}>
+                  Initial sketches for Klinik Kaulsay content management page
+                </Typography>
               </Grid>
             </Grid>
           </Grid>
@@ -228,11 +258,17 @@ export default function ProjectContent() {
                 width="100%"
                 className={classes.image}
               />
+              <Typography className={classes.imageTitle}>
+                  Wireframe for Klinik Kaulsay website
+                </Typography>
               <img
                 src="drkaulsayWireframeManage.jpg"
                 width="100%"
                 className={classes.image}
               />
+              <Typography className={classes.imageTitle}>
+                  Wireframe for Klinik Kaulsay content management page
+                </Typography>
             </Typography>
           </Grid>
           <Grid item md={12} xs={12}>
@@ -251,7 +287,16 @@ export default function ProjectContent() {
           <Grid item md={12} xs={12}>
             <Typography className={classes.title}>Testing</Typography>
             <Typography className={classes.content}>
-              {content.testing}
+              Test across browsers
+              {content.testing1}
+              <img
+                    src="browser.jpg"
+                    width="100%"
+                    className={classes.image}
+                  />
+              <br />
+              Test responsiveness
+              {content.testing2}
             </Typography>
           </Grid>
           <Grid item md={12} xs={12}>

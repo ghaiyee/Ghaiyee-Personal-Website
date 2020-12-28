@@ -5,6 +5,7 @@ import {
   Grid,
   Typography,
   Box,
+  Divider
 } from "@material-ui/core";
 
 import ButtonDark from "../Button/ButtonDark";
@@ -17,7 +18,7 @@ const useStyles = makeStyles(() => ({
     alignItems: "center",
     padding: 10,
     "@media (max-width:800px)": {
-      padding: 10,
+      padding: 5,
     },
   },
 
@@ -36,7 +37,7 @@ const useStyles = makeStyles(() => ({
     fontWeight: 500,
     letterSpacing: -0.5,
     color: "#191924",
-    padding: 5,
+    padding: 0,
   },
 
   projectDescription: {
@@ -45,8 +46,15 @@ const useStyles = makeStyles(() => ({
     fontWeight: 500,
     letterSpacing: -0.5,
     color: "#191924",
-    padding: 5,
+    padding: 0,
   },
+  divider:{
+    backgroundColor: "#191924",
+    width: "30%"
+  },
+  button:{
+    width: 100,
+  }
 }));
 
 export default function WorkCard() {
@@ -56,33 +64,26 @@ export default function WorkCard() {
       id: "1",
       projectImage: "default-project-photo.png",
       projectName: "klinik kaulsay",
-      projectSum: "Modern one-page, responsive web design",
-      techUsed: "XD, JavaScript, ReactJS",
+      projectSum: "Redesigned and included content management feature.",
+      techUsed: " Adobe XD, HTML, CSS, JavaScript, ReactJS, NextJS & Firebase",
       projectRole: "Prototyping, Web Design & Front-end Developement",
     },
     {
       id: "1",
       projectImage: "default-project-photo.png",
-      projectName: "klinik kaulsay",
+      projectName: "excellence hub",
       projectSum: "Modern one-page, responsive web design",
       techUsed: "XD, JavaScript, ReactJS",
       projectRole: "Prototyping, Web Design & Front-end Developement",
     },
-    {
-      id: "1",
-      projectImage: "default-project-photo.png",
-      projectName: "klinik kaulsay",
-      projectSum: "Modern one-page, responsive web design",
-      techUsed: "XD, JavaScript, ReactJS",
-      projectRole: "Prototyping, Web Design & Front-end Developement",
-    },
+    
   ];
   return (
     <div>
       <Container maxWidth="md">
         {projects.map((p) => (
           <Grid container className={classes.box}>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={5}>
               <Box className={classes.content}>
                 <img
                   src={p.projectImage}
@@ -95,24 +96,21 @@ export default function WorkCard() {
                 />
               </Box>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={7}>
               <Box className={classes.content}>
                 <Typography className={classes.projectTitle}>
                   {p.projectName}
                 </Typography>
+                <Divider  className={classes.divider}/>
                 <Typography className={classes.projectDescription}>
                   {p.projectSum}
                   <br />
-                  Technologies/Tools Used:
-                  <br />
                   {p.techUsed}
-                  <br />
-                  Role:
                   <br />
                   {p.projectRole}
                 </Typography>
                 <br />
-                <ButtonDark>View details</ButtonDark>
+                <ButtonDark className={classes.button}>View details</ButtonDark>
               </Box>
             </Grid>
           </Grid>

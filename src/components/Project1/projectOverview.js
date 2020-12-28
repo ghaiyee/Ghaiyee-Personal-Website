@@ -37,7 +37,7 @@ export default function ProjectOverview() {
     team: "ZK & Ghaiyee",
     myRole: "Web Designer & Front-end Developer",
     timeline:
-      "November 2020 to Present:  Empathize, Define, Ideate, Prototyping, Website Design, Development, Testing",
+      "November 2020 to Present:  Planning, Prototyping, Website Design, Development, Testing",
   };
   return (
     <div className={classes.root}>
