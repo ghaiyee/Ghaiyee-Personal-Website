@@ -50,7 +50,7 @@ const useStyles = makeStyles(() => ({
   },
   divider:{
     backgroundColor: "#191924",
-    width: "30%"
+    width: "20%"
   },
   button:{
     width: 100,
@@ -69,12 +69,20 @@ export default function WorkCard() {
       projectRole: "Prototyping, Web Design & Front-end Developement",
     },
     {
-      id: "1",
+      id: "2",
       projectImage: "default-project-photo.png",
       projectName: "excellence hub",
       projectSum: "Modern one-page, responsive web design",
       techUsed: "XD, JavaScript, ReactJS",
       projectRole: "Prototyping, Web Design & Front-end Developement",
+    },
+    {
+      id: "3",
+      projectImage: "default-project-photo.png",
+      projectName: "ghaiyee.com",
+      projectSum: "Portfilio Website",
+      techUsed: "XD, JavaScript, ReactJS",
+      projectRole: "Web Design & Front-end Developement",
     },
     
   ];

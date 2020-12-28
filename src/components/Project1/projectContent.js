@@ -275,14 +275,24 @@ export default function ProjectContent() {
             <Typography className={classes.title}>Design</Typography>
             <Typography className={classes.content}>
               Typography & Color
-              {content.design}
+              {content.design}  
             </Typography>
+            <img
+                src="typographyColor.jpg"
+                width="100%"
+                className={classes.image}
+              />
           </Grid>
           <Grid item md={12} xs={12}>
             <Typography className={classes.title}>Development</Typography>
             <Typography className={classes.content}>
               {content.development}
             </Typography>
+            <img
+                src="drkaulsayHome.gif"
+                width="100%"
+                className={classes.image}
+              />
           </Grid>
           <Grid item md={12} xs={12}>
             <Typography className={classes.title}>Testing</Typography>
