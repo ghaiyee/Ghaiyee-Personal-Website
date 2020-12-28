@@ -107,7 +107,7 @@ export default function ProjectContent() {
     testing1:
       "Tested on the major web browsers to ensure the website is able to renders correctly across major browsers such as Google Chrome, Firefox & Safari. ",
     testing2:
-      "Tested the responsiveness on multiple viewports such as Desktop, Laptop, Tablet & Mobile. ",
+      "Tested the responsiveness on multiple viewports such as Laptop, Tablet & Mobile. ",
     launching: "In progress...",
     feedback: "Pending...",
   };
@@ -321,6 +321,11 @@ export default function ProjectContent() {
               width="100%"
               className={classes.image}
             />
+             <img
+              src="drkaulsayManage.gif"
+              width="100%"
+              className={classes.image}
+            />
           </Grid>
           <Grid item md={12} xs={12}>
             <Typography className={classes.title}>Testing</Typography>
@@ -331,7 +336,6 @@ export default function ProjectContent() {
               {content.testing1}
             </Typography>
             <img src="browser.jpg" width="100%" className={classes.image} />
-            <br />
             <Typography className={classes.secondTitle}>
             Test responsiveness
             </Typography>
@@ -339,6 +343,7 @@ export default function ProjectContent() {
             <Typography className={classes.content}>
               {content.testing2}
             </Typography>
+            <img src="drkaulsayResponsiveMockup.jpg" width="100%" className={classes.image} />
           </Grid>
           <Grid item md={12} xs={12}>
             <Typography className={classes.title}>Launching</Typography>
