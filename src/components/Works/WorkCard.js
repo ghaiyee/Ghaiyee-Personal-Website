@@ -5,7 +5,8 @@ import {
   Grid,
   Typography,
   Box,
-  Divider
+  Divider,
+  Link,
 } from "@material-ui/core";
 
 import ButtonDark from "../Button/ButtonDark";
@@ -48,13 +49,22 @@ const useStyles = makeStyles(() => ({
     color: "#191924",
     padding: 0,
   },
-  divider:{
+  divider: {
     backgroundColor: "#191924",
-    width: "20%"
+    width: "20%",
   },
-  button:{
-    width: 100,
-  }
+  buttonFont: {
+    color:"#FDFFFC",
+    fontFamily: "Libre Baskerville",
+    fontSize: 15,
+    fontWeight: 500,
+    "@media (max-width: 700px)": {
+      fontSize: 8,
+    },
+    "&:hover,&:focus": {
+      color: "#3b3b4d",
+    }
+  },
 }));
 
 export default function WorkCard() {
@@ -67,6 +77,7 @@ export default function WorkCard() {
       projectSum: "Redesigned and included content management feature.",
       techUsed: " Adobe XD, HTML, CSS, JavaScript, ReactJS, NextJS & Firebase",
       projectRole: "Prototyping, Web Design & Front-end Developement",
+      href: "/project1",
     },
     {
       id: "2",
@@ -75,6 +86,7 @@ export default function WorkCard() {
       projectSum: "Modern one-page, responsive web design",
       techUsed: "XD, JavaScript, ReactJS",
       projectRole: "Prototyping, Web Design & Front-end Developement",
+      href: "/project2",
     },
     {
       id: "3",
@@ -83,8 +95,8 @@ export default function WorkCard() {
       projectSum: "Portfilio Website",
       techUsed: "XD, JavaScript, ReactJS",
       projectRole: "Web Design & Front-end Developement",
+      href: "/project3",
     },
-    
   ];
   return (
     <div>
@@ -99,7 +111,7 @@ export default function WorkCard() {
                   height="auto"
                   alt="project-photo"
                   style={{
-                    boxShadow: "6px 6px 6px #d3d3d3"
+                    boxShadow: "6px 6px 6px #d3d3d3",
                   }}
                 />
               </Box>
@@ -109,7 +121,7 @@ export default function WorkCard() {
                 <Typography className={classes.projectTitle}>
                   {p.projectName}
                 </Typography>
-                <Divider  className={classes.divider}/>
+                <Divider className={classes.divider} />
                 <Typography className={classes.projectDescription}>
                   {p.projectSum}
                   <br />
@@ -118,7 +130,13 @@ export default function WorkCard() {
                   {p.projectRole}
                 </Typography>
                 <br />
-                <ButtonDark className={classes.button}>View details</ButtonDark>
+                <ButtonDark >
+                  <Link href={p.href} style={{ textDecoration: 'none' }}>
+                    <Typography className={classes.buttonFont}>
+                    View details
+                    </Typography>
+                  </Link>
+                </ButtonDark>
               </Box>
             </Grid>
           </Grid>

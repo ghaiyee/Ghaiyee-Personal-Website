@@ -42,21 +42,21 @@ export default function ProjectOverview() {
     <div className={classes.root}>
       <Container maxWidth="md">
         <Grid container spacing={3}>
-          <Grid item md={3} xs={6}>
+          <Grid item md={3} xs={12}>
             <Typography className={classes.title}>Tools</Typography>
             <Typography className={classes.content}>{content.tools}</Typography>
           </Grid>
-          <Grid item md={3} xs={6}>
+          <Grid item md={3} xs={12}>
             <Typography className={classes.title}>Team</Typography>
             <Typography className={classes.content}>{content.team}</Typography>
           </Grid>
-          <Grid item md={3} xs={6}>
+          <Grid item md={3} xs={12}>
             <Typography className={classes.title}>My Role</Typography>
             <Typography className={classes.content}>
               {content.myRole}
             </Typography>
           </Grid>
-          <Grid item md={3} xs={6}>
+          <Grid item md={3} xs={12}>
             <Typography className={classes.title}>Timeline</Typography>
             <Typography className={classes.content}>
               {content.timeline}
