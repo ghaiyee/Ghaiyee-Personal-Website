@@ -7,6 +7,8 @@ const About = lazy(() => import("./about.js"))
 
 const Project1 = lazy(() => import("./project1.js"));
 
+const Project2 = lazy(() => import("./project2.js"));
+
 
 export default function Routes() {
   return (
@@ -16,6 +18,7 @@ export default function Routes() {
           <Route exact path="/" render={(props) => <Home {...props} />} />
           <Route exact path="/about" render={(props) => <About {...props}/>}/>
           <Route exact path="/project1" render={(props) => <Project1 {...props} />} />
+          <Route exact path="/project2" render={(props) => <Project2 {...props} />} />
           
           <Route>
             <p>404</p>
