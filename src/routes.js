@@ -10,6 +10,7 @@ const Project1 = lazy(() => import("./project1.js"));
 
 const Project2 = lazy(() => import("./project2.js"));
 
+const NotFound = lazy(() => import("./NotFound"));
 
 export default function Routes() {
   return (
@@ -22,7 +23,7 @@ export default function Routes() {
           <Route exact path="/project2" render={(props) => <Project2 {...props} />} />
           
           <Route>
-            <p>404</p>
+            <NotFound />
           </Route>
         </Switch>
       </Router>
