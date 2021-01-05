@@ -116,7 +116,7 @@ export default function ProjectIntro() {
   const introContent = {
     title: "EXCELLENCE HUB",
     content:
-      "An employee training tracker ",
+      "An employee training management system which allows training providers to manage administrative tasks effectively and minimize human error.  ",
   };
 
   return (
