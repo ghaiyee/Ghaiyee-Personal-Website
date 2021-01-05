@@ -75,7 +75,7 @@ export default function Intro() {
         <Grid item xs={12} md={12}>
           <Box className={classes.content}>
             <Typography className={classes.introText}>
-              Hello! I’m Ghaiyee, a UX Designer & 
+              Hello! I’m Ghaiyee, a self-taught UX Designer & 
               <br/> Front-End Developer based in 
               <br/>
               Kuala Lumpur, Malaysia.
