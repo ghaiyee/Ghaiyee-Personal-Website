@@ -1,5 +1,6 @@
 import { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Loading from "../src/components/Loading/Loading"
 
 const Home = lazy(() => import("./Home"));
 
@@ -12,7 +13,7 @@ const Project2 = lazy(() => import("./project2.js"));
 
 export default function Routes() {
   return (
-    <Suspense fallback={<span>Loading...</span>}>
+    <Suspense fallback={<Loading />}>
       <Router>
         <Switch>
           <Route exact path="/" render={(props) => <Home {...props} />} />
