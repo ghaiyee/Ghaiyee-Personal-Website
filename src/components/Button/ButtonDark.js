@@ -21,8 +21,8 @@ const useStyles = makeStyles(() => ({
       fontWeight: 700,
     },
     "@media (max-width: 700px)": {
-      width: 100,
-      height: 25,
+      width: 120,
+      height: 40,
     },
   },
 
@@ -31,7 +31,7 @@ const useStyles = makeStyles(() => ({
     fontSize: 15,
     fontWeight: 500,
     "@media (max-width: 700px)": {
-      fontSize: 8,
+      fontSize: 14,
     },
   },
 }));
