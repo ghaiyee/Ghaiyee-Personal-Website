@@ -51,7 +51,7 @@ export default function ProjectContent() {
   const classes = useStyles();
 
   const content = {
-    overview: "Excellence Hub",
+   challenges: "Learning & Developement (L&D) professionals often got involved in fire-fighting mode such as running ad-hoc training, promoting training to targeted audiences, registering attendees, multiple reminders to different attendees at different dates and time and churning out individual training report when required. ",
     process: "Work in Progress",
     research: " ",
   };
@@ -60,9 +60,9 @@ export default function ProjectContent() {
       <Container maxWidth="md">
         <Grid container spacing={3}>
           <Grid item md={12} xs={12}>
-            <Typography className={classes.title}>Project Overview</Typography>
+            <Typography className={classes.title}>Challenges</Typography>
             <Typography className={classes.content}>
-              {content.overview}
+              {content.challenges}
             </Typography>
           </Grid>
           <Grid item md={12} xs={12}>
