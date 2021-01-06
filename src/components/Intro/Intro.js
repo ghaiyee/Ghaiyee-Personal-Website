@@ -17,6 +17,7 @@ const useStyles = makeStyles(() => ({
     justifyContent: "center",
     padding: 15
   },
+
   photo: {
     height: 110,
     width: "auto",
@@ -29,6 +30,7 @@ const useStyles = makeStyles(() => ({
     fontWeight: 500,
     letterSpacing: -0.5,
     textAlign: "center",
+    width:400
   },
   icon:{
     color:"#191924",
@@ -75,10 +77,7 @@ export default function Intro() {
         <Grid item xs={12} md={12}>
           <Box className={classes.content}>
             <Typography className={classes.introText}>
-              Hello! I’m Ghaiyee, a self-taught UX Designer & 
-              <br/> Front-End Developer based in 
-              <br/>
-              Kuala Lumpur, Malaysia.
+              Hello! I’m Ghaiyee, a self-taught UX Designer & Front-End Developer based in Kuala Lumpur, Malaysia.
             </Typography>
           </Box>
         </Grid>
