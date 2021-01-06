@@ -54,7 +54,7 @@ const useStyles = makeStyles(() => ({
     width: "20%",
   },
   buttonFont: {
-    color:"#FDFFFC",
+    color: "#FDFFFC",
     fontFamily: "Libre Baskerville",
     fontSize: 15,
     fontWeight: 500,
@@ -63,7 +63,7 @@ const useStyles = makeStyles(() => ({
     },
     "&:hover,&:focus": {
       color: "#3b3b4d",
-    }
+    },
   },
 }));
 
@@ -78,27 +78,27 @@ export default function WorkCard() {
       techUsed: " Adobe XD, HTML, CSS, JavaScript, ReactJS, NextJS & Firebase",
       projectRole: "Web Design & Front-end Developement",
       href: "/project1",
-      button: "view details"
+      button: "view details",
     },
     {
       id: "2",
-      projectImage: "default-project-photo.png",
+      projectImage: "wipProject.jpg",
       projectName: "excellence hub",
       projectSum: "Employee training management system",
       techUsed: "Figma, JavaScript, ReactJS",
       projectRole: "UX Design, Web Design & Front-end Developement",
       href: "/project2",
-      button: "view details"
+      button: "view details",
     },
     {
       id: "3",
-      projectImage: "default-project-photo.png",
+      projectImage: "wipProject.jpg",
       projectName: "ghaiyee.com",
       projectSum: "Portfilio Website",
       techUsed: "XD, ReactJS",
       projectRole: "Web Design & Front-end Developement",
       href: "/project3",
-      button: "WIP"
+      button: "Work In Progress",
     },
   ];
   return (
@@ -133,13 +133,13 @@ export default function WorkCard() {
                   {p.projectRole}
                 </Typography>
                 <br />
-                <ButtonDark >
-                  <Link href={p.href} style={{ textDecoration: 'none' }}>
+                <Link href={p.href} style={{ textDecoration: "none" }}>
+                  <ButtonDark>
                     <Typography className={classes.buttonFont}>
-                    {p.button}
+                      {p.button}
                     </Typography>
-                  </Link>
-                </ButtonDark>
+                  </ButtonDark>
+                </Link>
               </Box>
             </Grid>
           </Grid>
