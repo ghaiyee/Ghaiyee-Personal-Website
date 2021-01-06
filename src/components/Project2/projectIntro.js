@@ -116,12 +116,12 @@ export default function ProjectIntro() {
   const introContent = {
     title: "EXCELLENCE HUB",
     content:
-      "An employee training management system which allows training providers to manage administrative tasks effectively and minimize human error.  ",
+      "An employee training management system which allows Learning & Development (L&D) professionals to manage administrative tasks effectively and minimize human error.  ",
   };
 
   return (
     <div className={classes.root}>
-      <img src="/projectIntroBackground.png" className={classes.background} />
+      <img src="/wipProjectIntroBackground.png" className={classes.background} />
       <Container maxWidth="lg">
         <Grid container>
           <Grid item xs={6} md={5}>
@@ -132,9 +132,9 @@ export default function ProjectIntro() {
               <Typography className={classes.content}>
                 {introContent.content}
               </Typography>
-              <Box className={classes.button}>
+              {/* <Box className={classes.button}>
                 <ButtonDark>Visit Website</ButtonDark>
-              </Box>
+              </Box> */}
             </Box>
           </Grid>
         </Grid>
