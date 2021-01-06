@@ -65,7 +65,13 @@ export default function ProjectContent() {
             </Typography>
           </Grid>
           <Grid item md={12} xs={12}>
-            <Typography className={classes.title}>Research</Typography>
+            <Typography className={classes.title}>Process</Typography>
+            <Typography className={classes.content}>
+              {content.research}
+            </Typography>
+          </Grid>
+          <Grid item md={12} xs={12}>
+            <Typography className={classes.title}>Discovery</Typography>
             <Typography className={classes.content}>
               {content.research}
             </Typography>

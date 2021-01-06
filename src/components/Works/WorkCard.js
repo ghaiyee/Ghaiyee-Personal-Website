@@ -97,8 +97,8 @@ export default function WorkCard() {
       projectSum: "Portfilio Website",
       techUsed: "XD, ReactJS",
       projectRole: "Web Design & Front-end Developement",
-      href: "/project3",
-      button: "Work In Progress",
+      // href: "/project3",
+      button: "work in progress",
     },
   ];
   return (
