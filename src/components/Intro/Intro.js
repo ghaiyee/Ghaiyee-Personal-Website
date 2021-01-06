@@ -106,15 +106,15 @@ export default function Intro() {
             </IconButton>
           </Box>
         </Grid>
-        <Grid item xs={12} md={12}>
+        {/* <Grid item xs={12} md={12}>
           <Box className={classes.content}>
-            <Button className={classes.button}>
+            <Button className={classes.button} >
               <Typography className={classes.buttonFont}>
                 RECENT WORKS
               </Typography>
             </Button>
           </Box>
-        </Grid>
+        </Grid> */}
       </Grid>
     </div>
   );
