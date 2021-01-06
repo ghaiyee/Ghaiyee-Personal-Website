@@ -72,7 +72,7 @@ export default function WorkCard() {
   const projects = [
     {
       id: "1",
-      projectImage: "default-project-photo.png",
+      projectImage: "drkaulsayWorkCard.jpg",
       projectName: "klinik kaulsay",
       projectSum: "Redesigned and included content management feature.",
       techUsed: " Adobe XD, HTML, CSS, JavaScript, ReactJS, NextJS & Firebase",
@@ -85,7 +85,7 @@ export default function WorkCard() {
       projectImage: "default-project-photo.png",
       projectName: "excellence hub",
       projectSum: "Employee training management system",
-      techUsed: "XD, JavaScript, ReactJS",
+      techUsed: "Figma, JavaScript, ReactJS",
       projectRole: "UX Design, Web Design & Front-end Developement",
       href: "/project2",
       button: "view details"
