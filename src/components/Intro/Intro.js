@@ -71,7 +71,7 @@ export default function Intro() {
       <Grid container>
         <Grid item xs={12} md={12}>
           <Box className={classes.content}>
-            <img src="gy-photo.png" className={classes.photo} />
+            <img src="gy-photo.jpg" className={classes.photo} />
           </Box>
         </Grid>
         <Grid item xs={12} md={12}>
