@@ -72,8 +72,8 @@ export default function ProjectContent() {
       " Lack of information regarding the business for individual users e.g., services available and specialization.",
     problem4:
       " Informations displayed are not up-to-date e.g., reviews and the missing Google Map location.",
-    problem5: "  ",
-    problem6: " Bad website page load performance based on GTmetrix report. ",
+    problem5: " Bad website page load performance based on GTmetrix report. ",
+    problem6: "  ",
     userStory1: " Know about Klinik Kaulsay",
     userStory2: " Know what services Klinik Kaulsay provides",
     userStory3: " Read about the recent reviews before visiting ",
@@ -103,7 +103,7 @@ export default function ProjectContent() {
     wireframing2:
       " This process allows us to get feedback from the user earlier in the process and it helps to prevent going down to the wrong path. Besides, wireframe also allows the development team to understand what they are building and how the end product should looks like.",
     design: " ",
-    development: " Klinik Kaulsay website was build from scratch with Next.js. The reason why we used Next.js is that   ",
+    development: " Klinik Kaulsay website was build from scratch with Next.js. ",
     testing1:
       "Tested on the major web browsers to ensure the website is able to renders correctly across major browsers such as Google Chrome, Firefox & Safari. ",
     testing2:
@@ -148,16 +148,15 @@ export default function ProjectContent() {
             </Typography>
           </Grid>
           <Grid item md={12} xs={12}>
-            <Typography className={classes.title}>The Problem</Typography>
+            <Typography className={classes.title}>The Problems</Typography>
             <Typography className={classes.content}>
               <ul>
                 <li>{content.problem1}</li>
                 <li>{content.problem2}</li>
                 <li>{content.problem3}</li>
                 <li>{content.problem4}</li>
-                <li>{content.problem5}</li>
                 <li>
-                  {content.problem6}
+                  {content.problem5}
                   <img
                     src="drkaulsayGTmetrixGrade.JPG"
                     width="100%"
@@ -192,15 +191,13 @@ export default function ProjectContent() {
                     <li>{content.userStory6}</li>
                     <li>{content.userStory7}</li>
                     <li>{content.userStory8}</li>
-                    <li>{content.userStory9}</li>
-                    <li>{content.userStory10}</li>
                   </ul>
                 </Typography>
               </Grid>
             </Grid>
           </Grid>
           <Grid item md={12} xs={12}>
-            <Typography className={classes.title}>The Solution</Typography>
+            <Typography className={classes.title}>The Solutions</Typography>
             <Typography className={classes.content}>
               Klinik Kaulsay's website redesign work for my team included:
               <ul>
@@ -208,7 +205,6 @@ export default function ProjectContent() {
                 <li>{content.solution2}</li>
                 <li>{content.solution3}</li>
                 <li>{content.solution4}</li>
-                <li>{content.solution5}</li>
               </ul>
             </Typography>
           </Grid>
@@ -351,12 +347,7 @@ export default function ProjectContent() {
               {content.launching}
             </Typography>
           </Grid>
-          <Grid item md={12} xs={12}>
-            <Typography className={classes.title}>Client Feedback</Typography>
-            <Typography className={classes.content}>
-              {content.feedback}
-            </Typography>
-          </Grid>
+          
         </Grid>
       </Container>
     </div>
