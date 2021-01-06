@@ -4,8 +4,7 @@ import {
   Grid,
   Box,
   Typography,
-  Card,
-  CardMedia,
+  Link
 } from "@material-ui/core";
 
 import ButtonDark from "../Button/ButtonDark";
@@ -108,6 +107,18 @@ const useStyles = makeStyles(() => ({
       paddingTop: 20,
     },
   },
+  buttonFont: {
+    color:"#FDFFFC",
+    fontFamily: "Libre Baskerville",
+    fontSize: 15,
+    fontWeight: 500,
+    "@media (max-width: 700px)": {
+      fontSize: 8,
+    },
+    "&:hover,&:focus": {
+      color: "#3b3b4d",
+    }
+  },
 }));
 
 export default function ProjectIntro() {
@@ -133,7 +144,13 @@ export default function ProjectIntro() {
                 {introContent.content}
               </Typography>
               <Box className={classes.button}>
-                <ButtonDark>Visit Website</ButtonDark>
+                <ButtonDark>
+                  <Link href="https://klinikkaulsaywebsite.vercel.app/" style={{ textDecoration: 'none' }}>
+                  <Typography className={classes.buttonFont}>
+                  Visit Website
+                  </Typography>
+                  </Link>
+                </ButtonDark>
               </Box>
             </Box>
           </Grid>
