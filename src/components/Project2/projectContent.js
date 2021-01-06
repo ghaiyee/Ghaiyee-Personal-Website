@@ -52,7 +52,8 @@ export default function ProjectContent() {
 
   const content = {
     overview: "Excellence Hub",
-    research: " Research ",
+    process: "Work in Progress",
+    research: " ",
   };
   return (
     <div className={classes.root}>
@@ -67,13 +68,7 @@ export default function ProjectContent() {
           <Grid item md={12} xs={12}>
             <Typography className={classes.title}>Process</Typography>
             <Typography className={classes.content}>
-              {content.research}
-            </Typography>
-          </Grid>
-          <Grid item md={12} xs={12}>
-            <Typography className={classes.title}>Discovery</Typography>
-            <Typography className={classes.content}>
-              {content.research}
+              {content.process}
             </Typography>
           </Grid>
         </Grid>
