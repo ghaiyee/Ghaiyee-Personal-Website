@@ -103,7 +103,7 @@ export default function ProjectContent() {
     wireframing2:
       " This process allows us to get feedback from the user earlier in the process and it helps to prevent going down to the wrong path. Besides, wireframe also allows the development team to understand what they are building and how the end product should looks like.",
     design: " ",
-    development: " Klinik Kaulsay website was build from scratch with Next.js. ",
+    development: " Klinik Kaulsay website was build from scratch with Next.js and Material-UI. ",
     testing1:
       "Tested on the major web browsers to ensure the website is able to renders correctly across major browsers such as Google Chrome, Firefox & Safari. ",
     testing2:
@@ -317,11 +317,17 @@ export default function ProjectContent() {
               width="100%"
               className={classes.image}
             />
+            <Typography className={classes.imageTitle}>
+              Klinik Kaulsay home page
+            </Typography>
              <img
               src="drkaulsayManage.gif"
               width="100%"
               className={classes.image}
             />
+            <Typography className={classes.imageTitle}>
+              Klinik Kaulsay content management system
+            </Typography>
           </Grid>
           <Grid item md={12} xs={12}>
             <Typography className={classes.title}>Testing</Typography>
