@@ -76,26 +76,29 @@ export default function WorkCard() {
       projectName: "klinik kaulsay",
       projectSum: "Redesigned and included content management feature.",
       techUsed: " Adobe XD, HTML, CSS, JavaScript, ReactJS, NextJS & Firebase",
-      projectRole: "Prototyping, Web Design & Front-end Developement",
+      projectRole: "Web Design & Front-end Developement",
       href: "/project1",
+      button: "view details"
     },
     {
       id: "2",
       projectImage: "default-project-photo.png",
       projectName: "excellence hub",
-      projectSum: "Modern one-page, responsive web design",
+      projectSum: "Employee training management system",
       techUsed: "XD, JavaScript, ReactJS",
-      projectRole: "Prototyping, Web Design & Front-end Developement",
+      projectRole: "UX Design, Web Design & Front-end Developement",
       href: "/project2",
+      button: "view details"
     },
     {
       id: "3",
       projectImage: "default-project-photo.png",
       projectName: "ghaiyee.com",
       projectSum: "Portfilio Website",
-      techUsed: "XD, JavaScript, ReactJS",
+      techUsed: "XD, ReactJS",
       projectRole: "Web Design & Front-end Developement",
       href: "/project3",
+      button: "WIP"
     },
   ];
   return (
@@ -133,7 +136,7 @@ export default function WorkCard() {
                 <ButtonDark >
                   <Link href={p.href} style={{ textDecoration: 'none' }}>
                     <Typography className={classes.buttonFont}>
-                    View details
+                    {p.button}
                     </Typography>
                   </Link>
                 </ButtonDark>
