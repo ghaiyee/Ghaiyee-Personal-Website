@@ -1,3 +1,4 @@
+import {memo} from 'react'
 import { makeStyles, Grid, Box, Typography, IconButton, Button } from "@material-ui/core";
 
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -62,8 +63,7 @@ const useStyles = makeStyles(() => ({
 
 }));
 
-
-export default function Intro() {
+const Intro = memo(() => {
   const classes = useStyles();
 
   return (
@@ -118,4 +118,6 @@ export default function Intro() {
       </Grid>
     </div>
   );
-}
+})
+
+export default Intro;
