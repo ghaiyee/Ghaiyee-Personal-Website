@@ -54,6 +54,7 @@ export default function ProjectContent() {
     challenges:
       "Learning & Developement (L&D) professionals often got involved in fire-fighting mode such as running ad-hoc training, promoting training to targeted audiences, registering attendees, multiple reminders to different attendees at different dates and time and churning out individual training report when required. ",
     process: "Work in Progress",
+    discovery: "",
     research: " ",
   };
   return (
@@ -73,6 +74,12 @@ export default function ProjectContent() {
               width="100%"
               className={classes.image}
             />
+          </Grid>
+          <Grid item md={12} xs={12}>
+            <Typography className={classes.title}>Discovery</Typography>
+            <Typography className={classes.content}>
+              {content.discovery}
+            </Typography>
           </Grid>
         </Grid>
       </Container>
